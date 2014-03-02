@@ -22,5 +22,6 @@
 		<module>javolution</module>
 		<module>designpattern</module>
     <module>spring-webapp</module>
+    <module>springapp</module>
   </modules>
 </project>

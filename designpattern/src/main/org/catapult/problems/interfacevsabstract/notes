@@ -1,0 +1,41 @@
+Interface
+
+    A class can implement multiple interfaces
+    An interface cannot provide any code at all
+    An interface can only define public static final constants
+    An interface cannot define instance variables
+    Adding a new method has ripple effects on implementing classes (design maintenance)
+    JAXB cannot deal with interfaces
+    An interface cannot extends or implement an abstract class
+    All interface methods are public
+
+In general, interfaces should be used to define contracts
+(what is to be achieved, not how to achieve it).
+
+Abstract Class
+
+    A class can extend at most one abstract class
+    An abstract class can contain code
+    An abstract class can define both static and instance constants (final)
+    An abstract class can define instance variables
+    Modification of existing abstract class code has ripple effects on extending classes (implementation maintenance)
+    Adding a new method to an abstract class has no ripple effect on extending classes
+    An abstract class can implement an interface
+    Abstract classes can implement private and protected methods
+
+Abstract classes should be used for (partial) implementation.
+They can be a mean to restrain the way API contracts should be implemented.
+
+- Abstract class is one which can't be instantiated, ie. its object canNOT be created.
+
+- Abstract method are method's declaration without its defination.
+
+- A Non-abstract class can only have Non-abstract methods.
+
+- An Abstract class can have both the Non-abstract as well as Abstract methods.
+
+- If the Class has an Abstract method then the class must also be Abstract.
+
+- An Abstract method must be implemented by the very first Non-Abstract sub-class.
+
+- Abstract class in Design patterns are used to encapsulate the behaviors that keeps changing.
