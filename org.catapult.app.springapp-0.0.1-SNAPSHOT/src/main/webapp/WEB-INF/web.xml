@@ -30,6 +30,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
+			/WEB-INF/mongo-config.xml
             /WEB-INF/application-security.xml
             /WEB-INF/mvc-dispatcher-servlet.xml
         </param-value>
