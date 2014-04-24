@@ -3,6 +3,7 @@ package org.catapult.web.controller;
 import javax.validation.Valid;
 
 import org.catapult.web.model.ChangePassword;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -56,6 +57,7 @@ public class SecurityController {
 	
 	
 	@RequestMapping(value="/changePassword",params = "cancel", method = RequestMethod.POST)
+	@PreAuthorize("hasRole('ROLE_USER')")
 	public String cancelPassword() {		
 		return "dashboard";
 	}

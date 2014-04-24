@@ -24,5 +24,7 @@
     <module>spring-webapp</module>
     <module>springapp</module>
     <module>MongoDBClient</module>
-	</modules>
+    <module>spring-rest-jsonp</module>
+    <module>content-negotiation</module>
+  </modules>
 </project>
